@@ -16,8 +16,70 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main class="container-fluid bg-primary">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3><b>Number Grabber</b></h3>
+        </div>
+        <div class="col-6">
+          <h3>ClickCount</h3>
+          <p id="numberamount">0</p>
+        </div>
+        
+          <div class="col-6 text-right">
+            <button onclick="start()" class="btn-btn-secondary">
+              START
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 text-left">
+            <h5>Small Click modifier:</h5>
+            <p id="activemod"></p>
+            <h5>Big Click modifier:</h5>
+            <p id="activemod-big"></p>
+          </div>
+          <div class="col-6 text-right">
+            <h5>Passive modifier:</h5>
+            <p id="passivemod"></p>
+            <h5>Big Passive modifier:</h5>
+            <p id="passivemod-big"></p>
+          </div>
+        </div>
+
+        <div class="col-12 text-center">
+          <img onclick="mine()" src="http://placekitten.com/200/200" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <button onclick="upgrade1()" class="btn btn-danger">
+            First Mod +2
+          </button>
+          <p id="test-id">Hello</p>
+        </div>
+        <div class="col-12 text-center">
+          <button onclick="upgrade2()" class="btn btn-danger">
+            Second Mod +5
+          </button>
+          <p id="cost2">Get</p>
+        </div>
+        <div class="col-12 text-center">
+          <button onclick="upgrade3()" class="btn btn-danger">
+            First Augment 10/s
+          </button>
+          <p id="cost3">Some</p>
+        </div>
+        <div class="col-12 text-center">
+          <button onclick="upgrade4()" class="btn btn-danger">
+            Second Augment 25/s
+          </button>
+          <p id="cost4">Numbers!</p>
+        </div>
+      </div>
+    </main>
     <footer></footer>
-    <script scr="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
+<
